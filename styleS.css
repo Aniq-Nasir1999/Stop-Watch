@@ -1,0 +1,108 @@
+body{
+    background-image: linear-gradient(to right, purple, orange);
+}
+@font-face {
+    font-family: stopwatch;
+    src: url(SonsieOne-Regular.ttf);
+  }
+  @font-face {
+    font-family: button;
+    src: url(PermanentMarker-Regular.ttf);
+  }
+#hour,#min,#sec,#milisec{
+    
+    display: inline-block;
+    
+    width: 90px;
+    text-align: center;
+    text-align: center;
+    color: white;
+    background-color: black;
+    background-image: linear-gradient(rgb(128, 0, 128), rgb(4, 107, 175));
+    border-radius: 6px;
+    border: 1px solid black;
+}
+#head{ 
+        display: flex;
+        margin-left: 10%;
+        width: auto;     
+        text-align: center;
+        color: black;
+        background-color: transparent;
+        border-radius: 6px;
+        font-size: 40px;
+        font-family: stopwatch;
+        background: -webkit-linear-gradient( rgb(128, 0, 128),rgb(4, 107, 175));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+    
+}
+/* *{
+    background-color: greenyellow;
+} */
+.btn-grad{
+    
+    width: 50%;
+    height: 50px;
+    margin: 20px auto;
+    border: 2px solid black;
+    border-radius: 40px;
+    box-shadow: 2px 2px 5px 5px rgb(197, 197, 197);
+    color: white;
+    font-size: 20px;
+    font-family: button;
+    
+    
+}
+#flexbtn{
+    display: inline;
+    flex-direction: row;
+}
+.btnn-grad{
+
+    display: flex;
+    width: 50%;
+    height: 50px;
+    margin: 20px auto;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    font-family: button
+}
+.btnn-grad {background-image: linear-gradient(to right, rgb(128, 0, 128) 0%, rgb(4, 107, 175) 51%, rgb(128, 0, 128) 100%)}
+.btn-grad {background-image: linear-gradient(to right, rgb(128, 0, 128) 0%, rgb(4, 107, 175) 51%, rgb(128, 0, 128) 100%)}
+.btn-grad:hover { 
+    background-position: right center;
+ }
+/* #flex{
+    display: flex;
+    display: inline-block;
+    text-align: center;
+} */
+/* #flex-b{
+    display: inline-flex;
+} */
+#background{
+    display: inline-block;
+    margin: 60px auto;
+    padding: 7px;
+    border: 2px solid black;
+    text-align: center;
+    width: auto;
+    height: auto;
+    background-image: url(./back.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+
+}
+@media only screen and (max-width: 277px) {
+    /* body {
+        zoom: 50%;
+    } */
+    
+    #head{
+        font-size: 20px;
+        margin-left: 0 auto;
+    }
+}
